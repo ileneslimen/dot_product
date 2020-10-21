@@ -1,0 +1,41 @@
+
+FUNCTION dot_product() : INTEGER
+VAR
+    
+    V1: ARRAY_OF INTEGER[m];
+    V2: ARRAY_OF INTEGER[m];
+    ps; i:INTEGER=0
+BEGIN
+     FOR i FROM 0 TO m-1  DO
+      
+          ps+=V1[i]*V2[i]
+      END_FOR
+ 
+    RETURN ps ;
+END
+
+
+ALGORITHM dotprodut
+VAR
+    set_declarations 
+    vector1 : ARRAY_OF integer[m];
+    vector2 : ARRAY_OF integer[m];
+    tab1: ARRAY_OF array[n];
+    tab2 : ARRAY_OF array[n];
+    n: INTEGER //number of vectors
+    i,j:INTEGER=0 
+BEGIN
+    read(v1)
+    tab1_push(vector1)
+    read(v2)
+    tab2_push(vector2)
+       FOR i FROM 0 TO n-1   DO
+           FOR j FROM 0 TO n-1   DO
+             ps:= dot_product ()
+                 IF (ps=0) THEN
+                   write(vectors are orthogonal)
+                 END_IF
+           END_FOR 
+     END_FOR
+    
+END
